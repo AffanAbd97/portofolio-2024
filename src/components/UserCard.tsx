@@ -1,0 +1,47 @@
+import Image from "next/image";
+import React from "react";
+import { BiEnvelope } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
+
+function UserCard() {
+  return (
+    <div className="bg-base rounded-3xl w-96 fixed left-6 top-1/2 transform -translate-y-1/2">
+      <div className="py-12 px-8 flex flex-col gap-8 items-center justify-center rounded-3xl  relative shadow-border shadow-2xl">
+        <div className="flex justify-between items-center w-full">
+          <h1 className="text-white text-4xl">Affan</h1>
+          <h1 className="text-white">Web Developer</h1>
+        </div>
+        <div className="w-full h-56 relative rounded-lg ">
+          <Image
+            src={"/img/self-image.jpg"}
+            alt=""
+            fill
+            style={{ objectFit: "cover" }}
+            className="w-full h-full object-cover rounded-3xl"
+          />
+        </div>
+        <div className="text-white text-center">
+          <h1 className="font-semibold text-2xl">Affan Abdullah Izzdiin</h1>
+          <p>affana959@gmail.com</p>
+        </div>
+        <div className="flex gap-2">
+          <div className="flex rounded-full border border-gray-400 p-4 text-2xl text-gray-400 hover:border-blue-500  hover:text-blue-500 cursor-pointer">
+            <BsGithub />
+          </div>
+          <div className="flex rounded-full border border-gray-400 p-4 text-2xl text-gray-400 hover:border-blue-500  hover:text-blue-500 cursor-pointer">
+            <BsGithub />
+          </div>
+          <div className="flex rounded-full border border-gray-400 p-4 text-2xl text-gray-400 hover:border-blue-500  hover:text-blue-500 cursor-pointer">
+            <BsGithub />
+          </div>
+        </div>
+        <button className="rounded-full font-semibold  inline-flex items-center gap-2 bg-blue-500 py-4 w-full justify-center text-[#222] outline outline-none hover:bg-transparent hover:outline-blue-500 hover:text-blue-500 transition-all duration-300 ease-in-out">
+          <BiEnvelope className="text-2xl" />
+          <span>Kontak Saya</span>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default UserCard;
