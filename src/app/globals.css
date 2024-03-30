@@ -5,3 +5,11 @@
 .shadow-border {
   box-shadow: 0 0 0 0.6px rgba(255, 255, 255, 0.8);
 }
+
+
+.service-border {
+  box-shadow: 0 0 0 0.6px rgba(255, 255, 255, 0.8);
+}
+.service-border:hover {
+  box-shadow: 0 0 0 0.6px rgba(59, 130, 246, 1);
+}
