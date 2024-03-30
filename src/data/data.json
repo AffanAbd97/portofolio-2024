@@ -1,0 +1,283 @@
+[
+  {
+    "id": 1,
+    "imagePath": "/img/mobile/Sprout.jpg",
+    "imageList": [
+      "/img/mobile/Sprout.jpg",
+      "/img/mobile/Sprout2.jpg"
+    ],
+    "vidoPath": "/videos/SproutDemo.mp4",
+    "name": "Sprout-Personal Gardening Assistant",
+    "type": "mobile",
+    "deskripsi": "Sprout merupakan aplikasi untuk membantu sesorang dalam kegiatan berkebun, aplikasi ini memiliki fitur untuk mengidentifikasi tanaman dan mendeteksi penyakit yang ada pada tanaman",
+    "tech": "Aplikasi ini memanfaatkan tensorflow lite untuk implementasi model Machine learning dan dibangun menggunakan Jetpack Compose. GoogleMapsApi dan OpenWeather Api untuk mendapatkan data lokasi dan data cuaca. Aplikasi ini mengunakan Retrofit untuk menggambil dan mengunggah data ke webService dan penggunaan DataStorePreference sebagai penyimpan sesi login",
+    "linkApk": "https://drive.google.com/file/d/19uvTM7rKpRm82lXfWrkC7RuVsxWU7TO5/view",
+    "linkGithub": "",
+    "linkWeb": "",
+    "framework": [
+      "Kotlin",
+      "Jetpack Compose",
+      "Figma"
+    ]
+  },
+  {
+    "id": 2,
+    "imagePath": "/img/mobile/ShopAPP.jpg",
+    "imageList": [
+      "/img/mobile/ShopAPP.jpg"
+    ],
+    "vidoPath": "/videos/ShopAPPDemo.mp4",
+    "name": "ShopApp-Compose",
+    "type": "mobile",
+    "deskripsi": "ShopApp merupakan aplikasi e-marketplace sederhana yang menyediakan daftar produk, keranjang dan riwayat transaksi",
+    "tech": "ShopApp di bangung menggunakan Kotlin dan Jetpack Compose sebagai UI Builder, aplikasi ini memiliki fitur untuk meyimpan produk ke keranjang, menambah jumlah, dan menghapus produk dari keranjang, namun aplikasi ini masih memiliki batasan yaitu penyimpanan data yang terbatas karena tidak adanya sistem database ataupun sistem penyimpanan lokal lainnya",
+    "linkApk": "https://drive.google.com/file/d/1CE8SGthsBoWq12ZEPjX7ptRK7HbRHrlU/view?usp=sharing",
+    "linkGithub": "https://github.com/AffanAbd97/ShopApp-JetpackCompose",
+    "linkWeb": "",
+    "framework": [
+      "Kotlin",
+      "Jetpack Compose"
+    ]
+  },
+  {
+    "id": 3,
+    "imagePath": "/img/mobile/StoryApp.jpg",
+    "imageList": [
+      "/img/mobile/StoryApp.jpg",
+      "/img/mobile/StoryApp2.jpg"
+    ],
+    "vidoPath": "/videos/StoryAppDemo.mp4",
+    "name": "StoryApp",
+    "type": "mobile",
+    "deskripsi": "Aplikasi ini merupakan sebuah aplikasi untuk mengunggah sebuah cerita dengan gambar dari camera atau dari gallery",
+    "tech": "Aplikasi di buat menggunakan kotlin dan xml. Aplikasi ini memanfaatkan DataStorePrefrence untuk menyimpan data login, dan GoogleMaps Api untuk melakukan geofencing dan sebagai penyedia layanan peta",
+    "linkApk": "https://drive.google.com/file/d/1uN3J66Vb_vsH3r6qeJEngAOsF8YiQuu3/view?usp=drive_link",
+    "linkGithub": "https://github.com/AffanAbd97/StoryApp-Android",
+    "linkWeb": "",
+    "framework": [
+      "Kotlin"
+    ]
+  },
+  {
+    "id": 4,
+    "imagePath": "/img/mobile/GitUser.jpg",
+    "imageList": [
+      "/img/mobile/GitUser.jpg"
+    ],
+    "vidoPath": "/videos/GitUserDemo.mp4",
+    "name": "GitUser",
+    "type": "mobile",
+    "deskripsi": "Aplikasi ini merupakan sebuah aplikasi untuk melihat daftar user yang ada pada github",
+    "tech": "Aplikasi ini dibuat dengan kotlin dan android xml dan memanfaatkan retrofit sebagai penyedia request ke webService, RoomDatabase untuk menyimpan data user Favorit, dan dataStore Preference sebagai penyimpanan pengaturan mode gelap dan terang",
+    "linkApk": "https://www.dropbox.com/scl/fi/6w8pf6ade5bzqcdlc0b47/GithubUsers.apk?dl=0&rlkey=84a5llrpbxzvj86tvd7hlhak0",
+    "linkGithub": "https://github.com/AffanAbd97/GithubUser-Android",
+    "linkWeb": "",
+    "framework": [
+      "Kotlin"
+    ]
+  },
+  {
+    "id": 5,
+    "imagePath": "/img/mobile/YayFilm.jpg",
+    "imageList": [
+      "/img/mobile/YayFilm.jpg"
+    ],
+    "vidoPath": "/videos/YayFilmDemo.mp4",
+    "name": "YayFilm",
+    "type": "mobile",
+    "deskripsi": "Aplikasi ini merupakan sebuah aplikasi sederhana yang menampilkan daftar film beserta sinopsis film tersebut",
+    "tech": "Aplikasi yang dibangun dengan kotlin dan android xml mamanfaatkan recyclerView untuk menampilkan daftar filmtersebut memanfaatkan retrofit sebagai penyedia request ke webService, RoomDatabase untuk menyimpan data user Favorit, dan dataStore Preference sebagai penyimpanan pengaturan mode gelap dan terang",
+    "linkApk": "https://drive.google.com/file/d/1sDGhCcl4DdfLSp6_kc4GcclCNoHxd42p/view?usp=sharing",
+    "linkGithub": "https://github.com/AffanAbd97/YayFilm-RecyclerViewApp",
+    "linkWeb": "",
+    "framework": [
+      "Kotlin"
+    ]
+  },
+  {
+    "id": 6,
+    "imagePath": "/img/mobile/KuySekolah.jpg",
+    "imageList": [
+      "/img/mobile/KuySekolah.jpg"
+    ],
+    "vidoPath": "/videos/KuySekolahDemo.mp4",
+    "name": "KuySekolah",
+    "type": "mobile",
+    "deskripsi": "Aplikasi ini merupakan sebuah aplikasi manajemen aktivitas siswa, aplikasi ini menyediakan keperluan yang di perlukan oleh siswa pada keseharian sekolahnya seperti, jadwal, nilai, absensi, dan pencatat",
+    "tech": "Aplikasi ini di bangun dengan bahasa java dan xml. Aplikasi ini memanfaatkan Google Firebase sebagai penyimpan data user (authentifikasi) dan data nilai juga data absensi, selain firebase aplikasi ini menggunakan SQLlite sebagai media penyimpanan data note atau catatan yang di buat para siswa. Namun, aplikasi ini masih memiliki kekurangan atau batasan karena beberapa halaman belum memiliki data yang pasti atau masih hard Coded",
+    "linkApk": "https://drive.google.com/file/d/1J7FZphtbZW_1m2_Y9lTBnGEDZdA2EqIK/view?usp=sharing",
+    "linkGithub": "https://github.com/AffanAbd97/KuySekolah-AndroidJava",
+    "linkWeb": "",
+    "framework": [
+      "Java"
+    ]
+  },
+  {
+    "id": 7,
+    "imagePath": "/img/web/Dinacom.png",
+    "imageList": [
+      "/img/web/Dinacom.png",
+      "/img/web/Dinacom2.png",
+      "/img/web/Dinacom3.png",
+      "/img/web/Dinacom4.png",
+      "/img/web/Dinacom5.png",
+      "/img/web/Dinacom6.png",
+      "/img/web/Dinacom7.png",
+      "/img/web/Dinacom8.png"
+    ],
+    "vidoPath": "",
+    "name": "Dinacom 2023 - Dinus Application Competition 2023",
+    "type": "web",
+    "deskripsi": "Website ini merupakan website event Dinacom pada tahun 2023. Dinacom sendiri Merupakan event kompetisi berskala nasional yang diadakan setiap tahun oleh UKM Dian Nuswantoro Computer Club",
+    "tech": "Website ini di bangun menggunakan framework php Laravel 8 dan memakai Tailwind CSS",
+    "linkApk": "",
+    "linkGithub": "",
+    "linkWeb": "https://dinacom.tech/",
+    "framework": [
+      "Laravel",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "id": 8,
+    "imagePath": "/img/web/ReactJob.png",
+    "imageList": [
+      "/img/web/ReactJob.png",
+      "/img/web/ReactJob2.png",
+      "/img/web/ReactJob3.png",
+      "/img/web/ReactJob4.png",
+      "/img/web/ReactJob5.png",
+      "/img/web/ReactJob6.png",
+      "/img/web/ReactJob7.png",
+      "/img/web/ReactJob8.png"
+    ],
+    "vidoPath": "",
+    "name": "ReactJob - Job Seeker Website",
+    "type": "web",
+    "deskripsi": "Website ini merupakan website lowongan pekerjaan yang menyediakan daftar pekerjaan yang dilekapi dengan fitur untuk melakukan filter data pekerjaan yang ingin ditampilkan. selain itu webite ini juga bisa menambah data lowongan pekerjaan dan mengubah juga menghapus data tersebut",
+    "tech": "Website ini di bangun menggunakan framework ReactJS dan memakai Tailwind CSS. website ini memakai library Axios sebagai pengambilan data dari web Api",
+    "linkApk": "",
+    "linkGithub": "https://github.com/AffanAbd97/ReactJob",
+    "linkWeb": "",
+    "framework": [
+      "ReactJs",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "id": 9,
+    "imagePath": "/img/web/weather1.png",
+    "imageList": [
+      "/img/web/weather1.png",
+      "/img/web/weather2.png"
+    ],
+    "vidoPath": "",
+    "name": "Weather App",
+    "type": "web",
+    "deskripsi": "Website ini merupakan website informasi cuaca yang menyediakan informasi cuaca dalam 6 hari kedepan",
+    "tech": "Website ini di bangun menggunakan framework Laravel InertiaJs dengan menggunakan ReactJS sebagai Front-End dan memakai Tailwind CSS. website ini memakai library Axios sebagai pengambilan data dari web Api. Api yang digunakan pada website ini merupakan milik OpenWeather Api",
+    "linkApk": "",
+    "linkGithub": "https://github.com/AffanAbd97/weather-app",
+    "linkWeb": "",
+    "framework": [
+      "Laravel",
+      "ReactJs",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "id": 10,
+    "imagePath": "/img/web/todoApp.png",
+    "imageList": [
+      "/img/web/todoApp.png",
+      "/img/web/todoApp2.png",
+      "/img/web/todoApp3.png",
+      "/img/web/todoApp4.png",
+      "/img/web/todoApp5.png",
+      "/img/web/todoApp6.png"
+    ],
+    "vidoPath": "",
+    "name": "Task App",
+    "type": "web",
+    "deskripsi": "Website ini merupakan website untuk mencatak tugas atau aktivitas yang akan kita lakukan pada kemudian hari",
+    "tech": "Website ini di bangun menggunakan framework Laravel Inertia ReactJS dan memakai Tailwind CSS. website ini memakai database Mysql, juga menggunakan library rect-toastify dalam melakukan toast notifikasi",
+    "linkApk": "",
+    "linkGithub": "https://github.com/AffanAbd97/TodoApp-LaravelReact/tree/development",
+    "linkWeb": "",
+    "framework": [
+      "Laravel",
+      "ReactJs",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "id": 11,
+    "imagePath": "/img/web/netflix1.png",
+    "imageList": [
+      "/img/web/netflix1.png",
+      "/img/web/netflix2.png",
+      "/img/web/netflix3.png",
+      "/img/web/netflix4.png",
+      "/img/web/netflix5.png"
+    ],
+    "vidoPath": "",
+    "name": "Netflix Clone",
+    "type": "web",
+    "deskripsi": "Website ini merupakan website tiruan website streaming video yang populer yaitu netflix",
+    "tech": "Website ini di bangun menggunakan framework NextJs App Router TypeScript dan memakai Tailwind CSS. website ini memakai database postgresql prisma",
+    "linkApk": "",
+    "linkGithub": "https://github.com/AffanAbd97/netfix-clone-nextjs/tree/development",
+    "linkWeb": "",
+    "framework": [
+      "NextJs",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "id": 12,
+    "imagePath": "/img/web/Ogani1.png",
+    "imageList": [
+      "/img/web/Ogani1.png",
+      "/img/web/Ogani2.png",
+      "/img/web/Ogani3.png",
+      "/img/web/Ogani4.png",
+      "/img/web/Ogani5.png",
+      "/img/web/Ogani6.png",
+      "/img/web/Ogani7.png",
+      "/img/web/Ogani8.png"
+    ],
+    "vidoPath": "",
+    "name": "Ogani Shop",
+    "type": "web",
+    "deskripsi": "Website ini merupakan website project akhir bootcamp sanbercode batch 36 dengan tema e-commerce makanan",
+    "tech": "Website ini di bangun menggunakan framework laravel 10 (versi asli project ini adalah Laravel 6), laravel ini menggunakan bootstap sebagai css library, namun untuk user interface dari project ini masih menggunakan template, dan masih memiliki kekurangan dalam validasi input",
+    "linkApk": "",
+    "linkGithub": "https://github.com/AffanAbd97/Ogani",
+    "linkWeb": "",
+    "framework": [
+      "Laravel",
+      "Bootstrap"
+    ]
+  },
+  {
+    "id": 13,
+    "imagePath": "/img/web/pos1.png",
+    "imageList": [
+      "/img/web/pos1.png",
+      "/img/web/pos2.png",
+      "/img/web/pos3.png"
+    ],
+    "vidoPath": "",
+    "name": "POS management System - [WIP]",
+    "type": "web",
+    "deskripsi": "Project ini merupakan sistem manajement barang dan inventaris toko yang memiliki fitur utama Point Of Sales",
+    "tech": "Project ini di bangun menggunakan Laravel 9 dan tailwind css serta memanfaatkan JavaScript untuk mempercepat dalam melakukan pengambilan data dan update data",
+    "linkApk": "",
+    "linkGithub": "",
+    "linkWeb": "",
+    "framework": [
+      "Laravel",
+      "Tailwind CSS"
+    ]
+  }
+]
