@@ -38,7 +38,7 @@ function Skills() {
         "Figma",
       ];
   return (
-    <Content Icon={PiChartBarHorizontalLight} tag="Skills">
+    <Content Icon={PiChartBarHorizontalLight} tag="Skills" id='skill'>
     <div className="flex flex-col gap-16 py-16">
       <h2 className="text-white text-5xl">
         My <span className="text-blue-500">Specializations</span>

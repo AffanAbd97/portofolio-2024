@@ -4,7 +4,7 @@ import { BiHome } from 'react-icons/bi'
 
 function Intro() {
   return (
-    <Content Icon={BiHome} tag="Introduction">
+    <Content Icon={BiHome} tag="Introduction" id='home'>
     <div className="flex flex-col gap-16 py-16">
       <h1 className="text-white text-7xl">
         Hi, I&apos;m{" "}

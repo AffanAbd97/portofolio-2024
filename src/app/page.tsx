@@ -7,6 +7,8 @@ import Skills from "@/components/Content/Skills";
 import Project from "@/components/Content/Project";
 import AOSProvider from "@/Providers/Aos";
 import { promises as fs } from "fs";
+import Contact from "@/components/Content/Contact";
+import Sidebar from "@/components/Sidebar";
 
 export default async function Home() {
 
@@ -16,16 +18,18 @@ export default async function Home() {
   return (
     <AOSProvider>
       <main className="flex  items-center p-24 bg-[#1f1f1f] ">
-        <div className="h-[8000px] ml-96 w-full">
+        <div className="h-auto ml-96 w-full">
           <div className="max-w-[770px] w-[770px] mx-auto">
             <Intro />
             <Resume />
             <Service />
             <Skills />
             <Project data={data}/>
+            <Contact/>
           </div>
         </div>
         <UserCard />
+        <Sidebar/>
       </main>
     </AOSProvider>
   );

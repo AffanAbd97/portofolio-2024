@@ -4,11 +4,12 @@ interface ContentProps {
   children: React.ReactNode;
   Icon: IconType;
   tag: string;
+  id:string
 }
 
-function Content({ children, Icon, tag }: ContentProps) {
+function Content({ children, Icon, tag,id }: ContentProps) {
   return (
-    <section className="mb-32">
+    <section className="mb-32" id={id}>
       <span className="bg-transparent text-gray-300 text-xs font-medium inline-flex px-4 py-2 justify-center items-center rounded-full shadow-border">
         <Icon className="text-sm me-2" />
         {tag}

@@ -4,7 +4,7 @@ import { BsBag } from 'react-icons/bs'
 
 function Resume() {
   return (
-    <Content Icon={BsBag} tag="Resume">
+    <Content Icon={BsBag} tag="Resume" id="resume">
     <div className="flex flex-col gap-16 py-16">
       <h2 className="text-white text-5xl">
         Education & <span className="text-blue-500">Experience</span>
