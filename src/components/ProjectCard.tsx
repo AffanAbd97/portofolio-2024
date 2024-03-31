@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Button, Carousel, Modal } from "flowbite-react";
 import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai";
 import { PiAndroidLogoFill } from "react-icons/pi";
-import { ProjectData } from "@/types/ProjectData";
+import { type ProjectData } from "@/types/ProjectData";
 interface Props {
   data?: ProjectData;
 }
