@@ -1,15 +1,18 @@
+import { useSidebar } from "@/app/hooks/useSidebar";
 import Image from "next/image";
 import React from "react";
 import { BiEnvelope } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import UserButton from "./UserButton";
 
 function UserCard() {
   return (
-    <div className="bg-base rounded-3xl w-96 fixed left-6 top-1/2 transform -translate-y-1/2">
-      <div className="py-12 px-8 flex flex-col gap-8 items-center justify-center rounded-3xl  relative shadow-border shadow-2xl">
-        <div className="flex justify-between items-center w-full">
+    <div className="mt-32 md:mt-0 bg-[#1f1f1f] rounded-3xl w-full md:w-96 md:fixed md:left-16 md:top-1/2 transform md:-translate-y-1/2">
+      <div className="py-12 px-8 flex flex-col gap-8 items-center justify-center rounded-3xl  relative md:shadow-border md:shadow-2xl">
+        <div className="md:flex justify-between items-center w-full hidden ">
           <h1 className="text-white text-4xl">Affan</h1>
-          <h1 className="text-white">Web Developer</h1>
+          <h1 className="hidden md:block text-white">Web Developer</h1>
+          <UserButton />
         </div>
         <div className="w-full h-56 relative rounded-lg ">
           <Image

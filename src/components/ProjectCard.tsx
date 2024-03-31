@@ -18,7 +18,7 @@ function ProjectData({ data }: Props) {
     <>
       <div data-aos="fade-left">
         <div
-          className="w-full h-[480px]  relative rounded-3xl peer mb-4 cursor-pointer group/project"
+          className="w-full md:h-[480px] h-48  relative rounded-3xl peer mb-4 cursor-pointer group/project"
           onClick={() => setOpenModal(true)}
         >
           <div className="w-full h-full relative">
@@ -30,7 +30,7 @@ function ProjectData({ data }: Props) {
               className="rounded-3xl"
             />
           </div>
-          <div className="flex items-center gap-2 z-50 absolute bottom-3 left-3">
+          <div className="md:flex hidden items-center gap-2 z-50 md:absolute bottom-3 left-3">
             {data.framework.map((item: string, index: number) => (
               <div
                 key={index}
@@ -41,9 +41,20 @@ function ProjectData({ data }: Props) {
             ))}
           </div>
         </div>
+        <div className="flex md:hidden items-center gap-2 z-50 md:absolute bottom-3 left-3">
+          {data.framework.map((item: string, index: number) => (
+            <div
+              key={index}
+              className="rounded-full bg-[#222] text-white shadow-border px-2 py-1 mb-4"
+            >
+              {item}
+            </div>
+          ))}
+        </div>
         <h1 className="peer-hover:underline text-4xl text-white">
           {data.name}
         </h1>
+        
       </div>
 
       <Modal

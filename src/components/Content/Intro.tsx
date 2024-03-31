@@ -6,7 +6,7 @@ function Intro() {
   return (
     <Content Icon={BiHome} tag="Introduction" id='home'>
     <div className="flex flex-col gap-16 py-16">
-      <h1 className="text-white text-7xl">
+      <h1 className="text-white text-5xl md:text-7xl">
         Hi, I&apos;m{" "}
         <span className="text-blue-500">Affan Abdullah Izzuddin</span>
       </h1>

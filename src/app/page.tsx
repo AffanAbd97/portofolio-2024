@@ -9,27 +9,29 @@ import AOSProvider from "@/Providers/Aos";
 import { promises as fs } from "fs";
 import Contact from "@/components/Content/Contact";
 import Sidebar from "@/components/Sidebar";
+import MobileSidebar from "@/components/MobileSidebar";
+import MobileTop from "@/components/MobileTop";
 
 export default async function Home() {
-
-  
   const file = await fs.readFile(process.cwd() + "/src/data/data.json", "utf8");
   const data = JSON.parse(file);
   return (
     <AOSProvider>
-      <main className="flex  items-center p-24 bg-[#1f1f1f] ">
-        <div className="h-auto ml-96 w-full">
-          <div className="max-w-[770px] w-[770px] mx-auto">
+      <MobileTop />
+      <MobileSidebar />
+      <main className="grid items-center  md:p-24 bg-[#1f1f1f]  w-full">
+        <div className="h-auto ml-0 md:ml-32 w-full">
+          <UserCard />
+          <div className="max-w-[770px] md:w-[770px] w-full mx-auto px-8">
             <Intro />
             <Resume />
             <Service />
             <Skills />
-            <Project data={data}/>
-            <Contact/>
+            <Project data={data} />
+            <Contact />
           </div>
         </div>
-        <UserCard />
-        <Sidebar/>
+        <Sidebar />
       </main>
     </AOSProvider>
   );
