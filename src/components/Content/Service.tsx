@@ -1,13 +1,13 @@
 import React from "react";
 import Content from "../Content";
-import { PiChartBarHorizontalLight } from "react-icons/pi";
+import { PiChartBarHorizontal, PiChartBarHorizontalLight } from "react-icons/pi";
 import ServiceCards from "../ServiceCards";
 import { CiGlobe } from "react-icons/ci";
 import { BsPhone } from "react-icons/bs";
 
 function Service() {
   return (
-    <Content Icon={PiChartBarHorizontalLight} tag="Service" id="service">
+    <Content Icon={PiChartBarHorizontal } tag="Service" id="service">
       <div className="flex flex-col gap-16 py-16">
         <h2 className="text-white text-5xl">
           My <span className="text-blue-500">Specializations</span>

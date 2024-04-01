@@ -8,6 +8,7 @@ import Dinacom from "../../../public/img/web/Dinacom.png";
 import ProjectCard from "../ProjectCard";
 import { ProjectData } from "@/types/ProjectData";
 import Link from "next/link";
+import { CgLoadbarDoc } from "react-icons/cg";
 interface ProjectProps {
   data: ProjectData[];
 }
@@ -16,7 +17,7 @@ function Project({ data }: ProjectProps) {
   const dataSprout = data.find((item) => item.id === 1);
 
   return (
-    <Content Icon={PiChartBarHorizontalLight} tag="Portfolio" id="portfolio">
+    <Content Icon={CgLoadbarDoc} tag="Portfolio" id="portfolio">
       <div className="flex flex-col gap-16 py-16">
         <h2 className="text-white text-5xl">
           Featured <span className="text-blue-500">Project</span>

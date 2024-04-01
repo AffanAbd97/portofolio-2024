@@ -1,16 +1,15 @@
 import { Tooltip } from "flowbite-react";
 import Link from "next/link";
 import React from "react";
-import { BiMoon, BiUser } from "react-icons/bi";
-import { BsBag } from "react-icons/bs";
-import { CiBag1 } from "react-icons/ci";
-import { FaBars } from "react-icons/fa6";
-import { PiBag } from "react-icons/pi";
+import { BiUser } from "react-icons/bi";
+import { BsBoxes } from "react-icons/bs";
+import { CgLoadbarDoc, CgMail } from "react-icons/cg";
+import { PiBriefcase, PiChartBarHorizontal } from "react-icons/pi";
 
 function Sidebar() {
   return (
     <>
-      <div className="md:fixed hidden md:block right-16 top-1/4 ">
+      <div className="lg:fixed hidden lg:block right-16 top-1/4 ">
         {/* <ul className="bg-gratext-gray-300 rounded p-2 mb-2 ">
           <li className="peer text-gray-300 p-2  hover:text-blue-500 flex justify-center flex-col items-center ">
             <FaBars className="text-2xl" />
@@ -37,7 +36,47 @@ function Sidebar() {
                 href={"#resume"}
                 className="inline-flex justify-center flex-col items-center "
               >
-                <BiUser className="text-2xl" />
+                <PiBriefcase   className="text-2xl" />
+              </Link>
+            </Tooltip>
+          </li>
+          <li className="peer text-gray-300 p-2  hover:text-blue-500 ">
+            <Tooltip content="Service" placement="left">
+              <Link
+                href={"#service"}
+                className="inline-flex justify-center flex-col items-center "
+              >
+                <PiChartBarHorizontal  className="text-2xl" />
+              </Link>
+            </Tooltip>
+          </li>
+          <li className="peer text-gray-300 p-2  hover:text-blue-500 ">
+            <Tooltip content="Skill" placement="left">
+              <Link
+                href={"#skill"}
+                className="inline-flex justify-center flex-col items-center "
+              >
+                <BsBoxes  className="text-2xl" />
+              </Link>
+            </Tooltip>
+          </li>
+          <li className="peer text-gray-300 p-2  hover:text-blue-500 ">
+            <Tooltip content="Portfolio" placement="left">
+              <Link
+                href={"#portfolio"}
+                className="inline-flex justify-center flex-col items-center "
+              >
+                <CgLoadbarDoc   className="text-2xl" />
+              </Link>
+            </Tooltip>
+          </li>
+          <li className="peer text-gray-300 p-2  hover:text-blue-500 ">
+            <Tooltip content="Contact" placement="left">
+              <Link
+                href={"#contact"}
+                className="inline-flex justify-center flex-col items-center "
+              >
+                <CgMail   className="text-2xl" />
               </Link>
             </Tooltip>
           </li>

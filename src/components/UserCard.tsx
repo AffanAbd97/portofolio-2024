@@ -7,11 +7,11 @@ import UserButton from "./UserButton";
 
 function UserCard() {
   return (
-    <div className="mt-32 md:mt-0 bg-[#1f1f1f] rounded-3xl w-full md:w-96 md:fixed md:left-16 md:top-1/2 transform md:-translate-y-1/2">
-      <div className="py-12 px-8 flex flex-col gap-8 items-center justify-center rounded-3xl  relative md:shadow-border md:shadow-2xl">
-        <div className="md:flex justify-between items-center w-full hidden ">
+    <div className="mt-32 lg:mt-0 bg-[#1f1f1f] rounded-3xl w-full lg:w-96 lg:fixed lg:left-16 lg:top-1/2 transform lg:-translate-y-1/2">
+      <div className="py-12 px-8 flex flex-col gap-8 items-center justify-center rounded-3xl  relative lg:shadow-border lg:shadow-2xl">
+        <div className="lg:flex justify-between items-center w-full hidden ">
           <h1 className="text-white text-4xl">Affan</h1>
-          <h1 className="hidden md:block text-white">Web Developer</h1>
+          <h1 className="hidden lg:block text-white">Web Developer</h1>
           <UserButton />
         </div>
         <div className="w-full h-56 relative rounded-lg ">

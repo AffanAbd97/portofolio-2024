@@ -19,10 +19,10 @@ export default async function Home() {
     <AOSProvider>
       <MobileTop />
       <MobileSidebar />
-      <main className="grid items-center  md:p-24 bg-[#1f1f1f]  w-full">
-        <div className="h-auto ml-0 md:ml-32 w-full">
+      <main className="grid items-center  lg:p-24 bg-[#1f1f1f]  w-full">
+        <div className="h-auto ml-0 lg:ml-32 w-full">
           <UserCard />
-          <div className="max-w-[770px] md:w-[770px] w-full mx-auto px-8">
+          <div className="max-w-[770px] lg:w-[770px] w-full mx-auto px-8">
             <Intro />
             <Resume />
             <Service />
