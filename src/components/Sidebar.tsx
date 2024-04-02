@@ -9,7 +9,7 @@ import { PiBriefcase, PiChartBarHorizontal } from "react-icons/pi";
 function Sidebar() {
   return (
     <>
-      <div className="lg:fixed hidden lg:block right-16 top-1/4 ">
+      <div className="2xl:fixed hidden 2xl:block right-16 top-1/4 ">
         {/* <ul className="bg-gratext-gray-300 rounded p-2 mb-2 ">
           <li className="peer text-gray-300 p-2  hover:text-blue-500 flex justify-center flex-col items-center ">
             <FaBars className="text-2xl" />

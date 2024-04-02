@@ -7,19 +7,19 @@ import UserButton from "./UserButton";
 
 function UserCard() {
   return (
-    <div className="mt-32 lg:mt-0 bg-[#1f1f1f] rounded-3xl w-full lg:w-96 lg:fixed lg:left-16 lg:top-1/2 transform lg:-translate-y-1/2">
-      <div className="py-12 px-8 flex flex-col gap-8 items-center justify-center rounded-3xl  relative lg:shadow-border lg:shadow-2xl">
-        <div className="lg:flex justify-between items-center w-full hidden ">
+    <div className="mt-32 2xl:mt-0 bg-[#1f1f1f] rounded-3xl w-full 2xl:w-96 2xl:fixed 2xl:left-16 2xl:top-1/2 transform 2xl:-translate-y-1/2">
+      <div className="py-12 px-8 flex flex-col gap-8 items-center justify-center rounded-3xl  relative shadow-border">
+        <div className="2xl:flex justify-between items-center w-full hidden ">
           <h1 className="text-white text-4xl">Affan</h1>
-          <h1 className="hidden lg:block text-white">Web Developer</h1>
+          <h1 className="hidden 2xl:block text-white">Web Developer</h1>
           <UserButton />
         </div>
-        <div className="w-full h-56 relative rounded-lg ">
+        <div className="w-60 h-56 relative rounded-lg ">
           <Image
             src={"/img/self-image.jpg"}
             alt=""
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", borderRadius: "25px" }}
             className="w-full h-full object-cover rounded-3xl"
           />
         </div>

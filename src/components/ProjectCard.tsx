@@ -18,7 +18,7 @@ function ProjectData({ data }: Props) {
     <>
       <div data-aos="fade-left">
         <div
-          className="w-full lg:h-[480px] h-48  relative rounded-3xl peer mb-4 cursor-pointer group/project"
+          className="w-full 2xl:h-[480px] h-48  relative rounded-3xl peer mb-4 cursor-pointer group/project"
           onClick={() => setOpenModal(true)}
         >
           <div className="w-full h-full relative">
@@ -30,7 +30,7 @@ function ProjectData({ data }: Props) {
               className="rounded-3xl"
             />
           </div>
-          <div className="lg:flex hidden items-center gap-2 z-50 lg:absolute bottom-3 left-3">
+          <div className="2xl:flex hidden items-center gap-2 z-50 2xl:absolute bottom-3 left-3">
             {data.framework.map((item: string, index: number) => (
               <div
                 key={index}
@@ -41,7 +41,7 @@ function ProjectData({ data }: Props) {
             ))}
           </div>
         </div>
-        <div className="flex lg:hidden items-center gap-2 z-50 lg:absolute bottom-3 left-3">
+        <div className="flex 2xl:hidden items-center gap-2 z-50 2xl:absolute bottom-3 left-3">
           {data.framework.map((item: string, index: number) => (
             <div
               key={index}
@@ -64,14 +64,14 @@ function ProjectData({ data }: Props) {
         size={"5xl"}
         theme={{
           root: {
-            base: "fixed inset-x-0 top-0 z-50 h-screen overflow-y-auto overflow-x-hidden lg:inset-0 lg:h-full ",
+            base: "fixed inset-x-0 top-0 z-50 h-screen overflow-y-auto overflow-x-hidden 2xl:inset-0 2xl:h-full ",
             show: {
               on: "flex bg-gray-900 bg-opacity-50  transition-all ease-in-out duration-1000",
             },
           },
 
           content: {
-            base: "relative h-full w-full p-4 lg:h-auto ",
+            base: "relative h-full w-full p-4 2xl:h-auto ",
             inner:
               "relative flex max-h-[90dvh] flex-col rounded-lg bg-[#222] shadow",
           },
