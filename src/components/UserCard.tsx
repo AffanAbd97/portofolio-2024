@@ -28,7 +28,7 @@ function UserCard() {
         </div>
         <div className="text-white text-center">
           <h1 className="font-semibold text-2xl">Affan Abdullah Izzuddin</h1>
-          <p>affana959@gmail.com</p>
+          {/* <p>affana959@gmail.com</p> */}
         </div>
         <div className="flex gap-2">
           <div className="flex rounded-full border border-gray-400 p-4 text-2xl text-gray-400 hover:border-blue-500  hover:text-blue-500 cursor-pointer">
