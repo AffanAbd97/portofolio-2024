@@ -8,7 +8,7 @@ interface Props {
 }
 function Web({ data }: Props) {
   const webData = data.filter((item) => item.type === "web");
-  console.log(webData);
+
 
   return (
     <div className="p-12 grid grid-cols-1 lg:grid-cols-2  2xl:grid-cols-3 gap-12">

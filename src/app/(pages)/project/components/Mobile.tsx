@@ -8,7 +8,7 @@ interface Props {
 }
 function Mobile({ data }: Props) {
   const mobileData = data.filter((item) => item.type === "mobile");
-  console.log(mobileData);
+
 
   return (
     <div className="p-12 grid grid-cols-1 lg:grid-cols-2  2xl:grid-cols-3 gap-12">
