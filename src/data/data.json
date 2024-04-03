@@ -279,5 +279,26 @@
       "Laravel",
       "Tailwind CSS"
     ]
+  },
+  {
+    "id": 14,
+    "imagePath": "/img/web/sync1.png",
+    "imageList": [
+      "/img/web/sync1.png",
+      "/img/web/sync2.png",
+      "/img/web/sync3.png"
+    ],
+    "vidoPath": "",
+    "name": "Udinus Data SYNC",
+    "type": "web",
+    "deskripsi": "Project ini merupakan sistem sinkronasi  database Universitas Dian Nuswantoro",
+    "tech": "Project ini di bangun menggunakan Laravel 10 dan Tailwind css serta memanfaatkan laravel livewire pengambilan data dan update data",
+    "linkApk": "",
+    "linkGithub": "",
+    "linkWeb": "",
+    "framework": [
+      "Laravel",
+      "Tailwind CSS"
+    ]
   }
 ]
