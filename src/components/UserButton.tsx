@@ -8,7 +8,7 @@ function UserButton() {
   return (
     <button
       onClick={toggleOpen}
-      className="sticky flex md:hidden text-white h-8 w-8 rounded-full hover:text-blue-500 focus:text-blue-500 service-border  items-center justify-center p-2"
+      className="sticky flex 2xl:hidden text-white h-8 w-8 rounded-full hover:text-blue-500 focus:text-blue-500 service-border  items-center justify-center p-2"
     >
       <FaBars />
     </button>

@@ -6,19 +6,22 @@ import { Button, Carousel, Modal } from "flowbite-react";
 import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai";
 import { PiAndroidLogoFill } from "react-icons/pi";
 import { type ProjectData } from "@/types/ProjectData";
+import { FadeDirection } from "@/types/FadeDirection";
+
 interface Props {
   data?: ProjectData;
+  fadeDir?: FadeDirection; 
 }
-function ProjectData({ data }: Props) {
+function ProjectItem({ data, fadeDir = FadeDirection.Left }: Props) {
   const [openModal, setOpenModal] = useState(false);
   if (!data) {
     return <>aada</>;
   }
   return (
     <>
-      <div data-aos="fade-left">
+      <div data-aos={`fade-${fadeDir}`}>
         <div
-          className="w-full md:h-[480px] h-48  relative rounded-3xl peer mb-4 cursor-pointer group/project"
+          className="w-full 2xl:h-[480px] h-48  relative rounded-3xl peer mb-4 cursor-pointer group/project"
           onClick={() => setOpenModal(true)}
         >
           <div className="w-full h-full relative">
@@ -30,7 +33,7 @@ function ProjectData({ data }: Props) {
               className="rounded-3xl"
             />
           </div>
-          <div className="md:flex hidden items-center gap-2 z-50 md:absolute bottom-3 left-3">
+          <div className="2xl:flex hidden items-center gap-2 z-50 2xl:absolute bottom-3 left-3">
             {data.framework.map((item: string, index: number) => (
               <div
                 key={index}
@@ -41,7 +44,7 @@ function ProjectData({ data }: Props) {
             ))}
           </div>
         </div>
-        <div className="flex md:hidden items-center gap-2 z-50 md:absolute bottom-3 left-3">
+        <div className="flex 2xl:hidden items-center gap-2 z-50 2xl:absolute bottom-3 left-3">
           {data.framework.map((item: string, index: number) => (
             <div
               key={index}
@@ -54,7 +57,6 @@ function ProjectData({ data }: Props) {
         <h1 className="peer-hover:underline text-4xl text-white">
           {data.name}
         </h1>
-        
       </div>
 
       <Modal
@@ -64,14 +66,14 @@ function ProjectData({ data }: Props) {
         size={"5xl"}
         theme={{
           root: {
-            base: "fixed inset-x-0 top-0 z-50 h-screen overflow-y-auto overflow-x-hidden md:inset-0 md:h-full ",
+            base: "fixed inset-x-0 top-0 z-50 h-screen overflow-y-auto overflow-x-hidden 2xl:inset-0 2xl:h-full ",
             show: {
               on: "flex bg-gray-900 bg-opacity-50  transition-all ease-in-out duration-1000",
             },
           },
 
           content: {
-            base: "relative h-full w-full p-4 md:h-auto ",
+            base: "relative h-full w-full p-4 2xl:h-auto ",
             inner:
               "relative flex max-h-[90dvh] flex-col rounded-lg bg-[#222] shadow",
           },
@@ -175,4 +177,4 @@ function ProjectData({ data }: Props) {
   );
 }
 
-export default ProjectData;
+export default ProjectItem;

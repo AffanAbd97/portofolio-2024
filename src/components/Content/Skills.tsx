@@ -2,7 +2,7 @@ import React from 'react'
 import { PiChartBarHorizontalLight } from 'react-icons/pi'
 import { SiFigma, SiJavascript, SiJetpackcompose, SiMysql, SiTailwindcss } from 'react-icons/si'
 import Content from '../Content'
-import { BsBootstrapFill } from 'react-icons/bs';
+import { BsBootstrapFill, BsBoxes } from 'react-icons/bs';
 import { DiPhp, DiHtml5, DiCss3, DiReact } from 'react-icons/di';
 import { FaLaravel } from 'react-icons/fa6';
 import { TbBrandKotlin } from 'react-icons/tb';
@@ -38,12 +38,12 @@ function Skills() {
         "Figma",
       ];
   return (
-    <Content Icon={PiChartBarHorizontalLight} tag="Skills" id='skill'>
+    <Content Icon={BsBoxes} tag="Skills" id='skill'>
     <div className="flex flex-col gap-16 py-16">
       <h2 className="text-white text-5xl">
-        My <span className="text-blue-500">Specializations</span>
+        My <span className="text-blue-500">Advantages</span>
       </h2>
-      <div className="grid md:grid-cols-6 grid-cols-2 gap-4 items-center mx-auto">
+      <div className="grid lg:grid-cols-6 grid-cols-2 gap-4 items-center mx-auto">
         {icons.map((Icon, index) => (
           <div
             key={index}

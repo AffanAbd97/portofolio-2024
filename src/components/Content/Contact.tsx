@@ -11,7 +11,7 @@ function Contact() {
           Let&apos;s Work <span className="text-blue-500"> Together!</span>
         </h2>
         <form action="https://formsubmit.co/affana959@gmail.com" method="POST">
-          <div className="relative z-0 mb-6 w-full group">
+          <div className="relative z-0 mb-6 w-full group" data-aos="fade-left">
             <input
               type="email"
               name="email"
@@ -27,7 +27,7 @@ function Contact() {
               Email address
             </label>
           </div>
-          <div className="relative z-0 mb-6 w-full group">
+          <div className="relative z-0 mb-6 w-full group" data-aos="fade-right">
             <input
               type="text"
               name="name"
@@ -43,7 +43,7 @@ function Contact() {
               Name
             </label>
           </div>
-          <div className="relative z-0 mb-6 w-full group">
+          <div className="relative z-0 mb-6 w-full group" data-aos="fade-left">
             <textarea
               name="message"
               id="message"
@@ -60,15 +60,13 @@ function Contact() {
               Message
             </label>
           </div>
-          <button
+          <button data-aos="fade-up"
             type="submit"
             className="rounded-xl font-semibold  inline-flex items-center gap-2 bg-blue-500 py-4 w-full justify-center text-[#222] outline outline-none hover:bg-transparent hover:outline-blue-500 hover:text-blue-500 transition-all duration-300 ease-in-out"
           >
             Submit
           </button>
         </form>
-
-        
       </div>
     </Content>
   );
