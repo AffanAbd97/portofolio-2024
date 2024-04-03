@@ -93,15 +93,21 @@ body {
   }
 }
 
-
-.service-border {
+.writing-vertical {
+  writing-mode: vertical-lr; /* lr: left-to-right */
+  text-orientation: mixed;
+}
+.shadow-border {
   box-shadow: none;
+}
+.service-border {
+  box-shadow: 0 0 0 0.6px rgba(255, 255, 255, 0.8) !important
 }
 .service-border:hover {
   box-shadow: 0 0 0 0.6px rgba(59, 130, 246, 1) !important;
 }
 @media (min-width: 1536px) {
   .shadow-border {
-    box-shadow: 0 0 0 0.6px rgba(255, 255, 255, 0.8) !important; 
+    box-shadow: 0 0 0 0.6px rgba(255, 255, 255, 0.8) !important;
   }
 }

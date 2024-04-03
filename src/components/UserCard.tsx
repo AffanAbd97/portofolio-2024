@@ -4,6 +4,9 @@ import React from "react";
 import { BiEnvelope } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import UserButton from "./UserButton";
+import Link from "next/link";
+import { Linkedin, LinkedinIcon } from "lucide-react";
+import { Tooltip } from "flowbite-react";
 
 function UserCard() {
   return (
@@ -14,9 +17,9 @@ function UserCard() {
           <h1 className="hidden 2xl:block text-white">Web Developer</h1>
           <UserButton />
         </div>
-        <div className="w-60 h-56 relative rounded-lg ">
+        <div className="w-60 h-56 relative rounded-lg bg-blue-600/25">
           <Image
-            src={"/img/self-image.jpg"}
+            src={"/img/self-image.png"}
             alt=""
             fill
             style={{ objectFit: "cover", borderRadius: "25px" }}
@@ -24,19 +27,27 @@ function UserCard() {
           />
         </div>
         <div className="text-white text-center">
-          <h1 className="font-semibold text-2xl">Affan Abdullah Izzdiin</h1>
+          <h1 className="font-semibold text-2xl">Affan Abdullah Izzuddin</h1>
           <p>affana959@gmail.com</p>
         </div>
         <div className="flex gap-2">
           <div className="flex rounded-full border border-gray-400 p-4 text-2xl text-gray-400 hover:border-blue-500  hover:text-blue-500 cursor-pointer">
-            <BsGithub />
+            <Tooltip content="Github" placement="bottom">
+              <Link href={"https://github.com/AffanAbd97"}>
+                {" "}
+                <BsGithub />
+              </Link>
+            </Tooltip>
           </div>
           <div className="flex rounded-full border border-gray-400 p-4 text-2xl text-gray-400 hover:border-blue-500  hover:text-blue-500 cursor-pointer">
-            <BsGithub />
+            <Tooltip content="LinkedIn" placement="bottom">
+              <Link href={"https://www.linkedin.com/in/affanabd97/"}>
+                {" "}
+                <Linkedin />
+              </Link>
+            </Tooltip>
           </div>
-          <div className="flex rounded-full border border-gray-400 p-4 text-2xl text-gray-400 hover:border-blue-500  hover:text-blue-500 cursor-pointer">
-            <BsGithub />
-          </div>
+        
         </div>
         <button className="rounded-full font-semibold  inline-flex items-center gap-2 bg-blue-500 py-4 w-full justify-center text-[#222] outline outline-none hover:bg-transparent hover:outline-blue-500 hover:text-blue-500 transition-all duration-300 ease-in-out">
           <BiEnvelope className="text-2xl" />

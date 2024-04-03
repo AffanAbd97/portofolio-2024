@@ -5,10 +5,11 @@ import Content from "../Content";
 import { PiChartBarHorizontalLight } from "react-icons/pi";
 import Image from "next/image";
 import Dinacom from "../../../public/img/web/Dinacom.png";
-import ProjectCard from "../ProjectCard";
+
 import { ProjectData } from "@/types/ProjectData";
 import Link from "next/link";
 import { CgLoadbarDoc } from "react-icons/cg";
+import ProjectItem from "../ProjectCard";
 interface ProjectProps {
   data: ProjectData[];
 }
@@ -23,11 +24,11 @@ function Project({ data }: ProjectProps) {
           Featured <span className="text-blue-500">Project</span>
         </h2>
 
-        <ProjectCard data={dataDinacom} />
-        <ProjectCard data={dataSprout} />
+        <ProjectItem data={dataDinacom} />
+        <ProjectItem data={dataSprout} />
         <div className="text-center">
           <Link
-            href="/Project"
+            href="/project"
             className="rounded-xl font-semibold  inline-flex items-center gap-2 bg-blue-500 py-4 px-6 text-sm justify-center text-[#222] outline outline-none hover:bg-transparent hover:outline-blue-500 hover:text-blue-500 transition-all duration-300 ease-in-out"
           >
             More Project

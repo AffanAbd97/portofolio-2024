@@ -17,7 +17,7 @@ function MobileSidebar() {
   const { isOpen, toggleOpen } = useSidebar();
   const pathname = usePathname();
 
-  console.log(pathname);
+
 
   return (
     <>

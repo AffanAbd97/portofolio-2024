@@ -6,17 +6,20 @@ import { Button, Carousel, Modal } from "flowbite-react";
 import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai";
 import { PiAndroidLogoFill } from "react-icons/pi";
 import { type ProjectData } from "@/types/ProjectData";
+import { FadeDirection } from "@/types/FadeDirection";
+
 interface Props {
   data?: ProjectData;
+  fadeDir?: FadeDirection; 
 }
-function ProjectData({ data }: Props) {
+function ProjectItem({ data, fadeDir = FadeDirection.Left }: Props) {
   const [openModal, setOpenModal] = useState(false);
   if (!data) {
     return <>aada</>;
   }
   return (
     <>
-      <div data-aos="fade-left">
+      <div data-aos={`fade-${fadeDir}`}>
         <div
           className="w-full 2xl:h-[480px] h-48  relative rounded-3xl peer mb-4 cursor-pointer group/project"
           onClick={() => setOpenModal(true)}
@@ -54,7 +57,6 @@ function ProjectData({ data }: Props) {
         <h1 className="peer-hover:underline text-4xl text-white">
           {data.name}
         </h1>
-        
       </div>
 
       <Modal
@@ -175,4 +177,4 @@ function ProjectData({ data }: Props) {
   );
 }
 
-export default ProjectData;
+export default ProjectItem;

@@ -11,6 +11,7 @@ import Contact from "@/components/Content/Contact";
 import Sidebar from "@/components/Sidebar";
 import MobileSidebar from "@/components/MobileSidebar";
 import MobileTop from "@/components/MobileTop";
+import Footer from "@/components/Footer";
 
 export default async function Home() {
   const file = await fs.readFile(process.cwd() + "/src/data/data.json", "utf8");
@@ -25,7 +26,7 @@ export default async function Home() {
           <div className="max-w-[770px] 2xl:w-[770px] w-full mx-auto px-8">
             <Intro />
             <Resume />
-            <Service />
+            <Service data={data}/>
             <Skills />
             <Project data={data} />
             <Contact />
@@ -33,6 +34,7 @@ export default async function Home() {
         </div>
         <Sidebar />
       </main>
+      <Footer className="2xl:hidden" />
     </AOSProvider>
   );
 }
