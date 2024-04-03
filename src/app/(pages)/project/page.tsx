@@ -18,8 +18,8 @@ export default async function Project() {
             Affan
           </Link>
           <TabsList>
-            <TabsTrigger value="web">Account</TabsTrigger>
-            <TabsTrigger value="mobile">Password</TabsTrigger>
+            <TabsTrigger value="web">Website</TabsTrigger>
+            <TabsTrigger value="mobile">Mobile</TabsTrigger>
           </TabsList>
           <div></div>
         </nav>
