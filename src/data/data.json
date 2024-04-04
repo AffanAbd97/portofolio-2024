@@ -300,5 +300,26 @@
       "Laravel",
       "Tailwind CSS"
     ]
+  },
+  {
+    "id": 15,
+    "imagePath": "/img/web/pmb1.png",
+    "imageList": [
+      "/img/web/pmb1.png",
+      "/img/web/pmb2.png"
+    ],
+    "vidoPath": "",
+    "name": "Pendaftaran Udinus - [WIP]",
+    "type": "web",
+    "deskripsi": "Project ini merupakan website yang akan digunakan dalam pendaftaran mahasiswa baru Universitas Dian Nuswantoro",
+    "tech": "Project ini di bangun menggunakan Laravel 10 dan menggunakan ReactJs sebagai Front-End",
+    "linkApk": "",
+    "linkGithub": "",
+    "linkWeb": "",
+    "framework": [
+      "Laravel",
+      "Tailwind CSS",
+      "ReactJs"
+    ]
   }
 ]
